@@ -3,4 +3,6 @@ setup.py
 pgbackup.egg-info/PKG-INFO
 pgbackup.egg-info/SOURCES.txt
 pgbackup.egg-info/dependency_links.txt
+pgbackup.egg-info/entry_points.txt
+pgbackup.egg-info/requires.txt
 pgbackup.egg-info/top_level.txt
