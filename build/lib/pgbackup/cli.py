@@ -9,7 +9,7 @@ class DriverAction(Action):
             parser.error("Unknown driver. Available drivers are 'local' & 's3'")
         namespace.driver = driver.lower()
         namespace.destination = destination
-
+    
 def create_parser():
     parser = ArgumentParser()
     parser.add_argument('url', help="URL of the PostgreSQL database to backup")
