@@ -8,7 +8,7 @@ def dump(url):
         print(f"Error: {err}")
         sys.exit(1)
 
-def dump_file_name(url, timestamp):
+def dump_file_name(url, timestamp=None):
     db_name = url.split("/")[-1]
     db_name = db_name.split("?")[0]
     if timestamp:
