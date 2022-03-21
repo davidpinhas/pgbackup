@@ -1,6 +1,4 @@
 from argparse import Action, ArgumentParser
-from ast import arg
-from sqlite3 import Timestamp
 
 known_drivers = ['local', 's3']
 
@@ -19,7 +17,7 @@ def create_parser():
             help="how & where to store the backup",
             nargs=2,
             action=DriverAction,
-            metavar=('driver', 'destination')
+            metavar=('driver', 'destination'),
             required=True)
     return parser
 
